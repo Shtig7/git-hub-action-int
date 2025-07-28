@@ -23,6 +23,7 @@ jobs:
 
       - name: Run tests
         run: |
+          pip install pytest
           pytest test_app.py
 
       - name: Login to DockerHub
@@ -36,4 +37,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: yourdockerhubusername/flask-docker-ci:latest
+          tags: shtig7/flask-docker-ci:latest
